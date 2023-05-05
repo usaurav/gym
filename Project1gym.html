@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Fitness</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Oswald:wght@300&family=Poltawski+Nowy:ital@1&family=Shantell+Sans:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <style>
+        /*Css Reset*/
+        body{
+            font-family: 'Balsamiq Sans', cursive;;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/gym.jpg');
+            color: white;
+            
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+        .left img{
+            width: 55px;
+            filter: invert(100%); /* to change colors of png*/
+            position: relative;
+            top: 0px;
+            left: 30px;
+        }
+        .left div{
+            line-height: 8px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .mid{
+            /* border: 2px solid blue; */
+            display: block;
+            margin: 29px auto;
+            width: 36%;
+        }
+        .right{
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            top: 43px;
+            right: 34px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 15px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .btn{
+            font-family: 'Balsamiq Sans', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(37, 35, 35);
+        }
+        .container{
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .form-group input{
+            font-family: 'Balsamiq Sans', cursive;
+            text-align: center;
+            display: block;
+            width: 350px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 10px auto;    
+            font-size: 20px;
+            border-radius: 8px;
+        }
+        .container button{
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/dumbells.png" alt="">
+            <div>
+                Saurav Fitness
+            </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym near you</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Phone No.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Email-id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
